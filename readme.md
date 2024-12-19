@@ -1,0 +1,1 @@
+A script to use in conjunction with Audacity that automatically imports and mixes given audio files in m4a or mp3 format.
