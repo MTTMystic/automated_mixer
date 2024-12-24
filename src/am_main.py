@@ -1,6 +1,14 @@
-
+import os 
 
 class AutoMixer:
+	def validate_input():
+		active_dir_exists = os.path.exists(active_dir)
+		#check if active dir exists
+		if active_dir_exists:
+			pass
+		else:
+			print()
+
 	def __init__(self, input_dir):
 		#TODO: validate input dir before assigning
 		#TODO: instantiate IO and Error handler
@@ -16,3 +24,5 @@ class AutoMixer:
 			- macro factory functions?
 
 		"""
+		self.active_dir = self.path.abspath(input_dir)
+		
