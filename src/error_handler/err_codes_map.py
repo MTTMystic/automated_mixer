@@ -1,7 +1,7 @@
-from err_msg import * 
+from .err_msg import * 
 
 err_codes_map = {
-	"FilesysErr : {
+	"FilesysErr" : {
 		"DIR_NON_EXIST": DIR_NON_EXIST
 	}
 }
