@@ -6,8 +6,6 @@ Defining basic functionality of error handler which is abstracted from the speci
 - Enums : each class of error (for example, validation error for input audio) is defined with enum
 - Enum members : for each class of error the enum members define a string to be formatted -> simple
 - (Advanced) could enum members somehow store information on callback fn or how to process error in more advanced cases? check if this arises
-- Dev mode errors : meta-report on failure of error reporting and failure of code itself (not user error)
-- for dev mode errors use try/except and report which block caused the error
 
 test points:
 - if error enum does not exist then fail

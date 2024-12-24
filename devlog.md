@@ -8,3 +8,6 @@ Switch dev environment to ubuntu vm and sublime text. Organization of new design
 Starting point is skeleton of automated mixer main class -- sure to evolve, but basic entry point. Outlined basic steps for initializing the automixer as a blueprint for dev stages. Using branch am_class_structure and subbranch to tackle error reporting (top priority).
 
 Otlined error reporting tests, error class (handler) structure and success/fail, and dev_mode reporting. Designing before bed is fun even if I save the code for another day :)
+
+# 12-23-2024
+Decied to pt error handling on backburner as qol feature and focus on main functionality first
