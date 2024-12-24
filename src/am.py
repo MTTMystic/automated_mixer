@@ -1,6 +1,6 @@
 import os 
 from error_handler.report_err import report_err
-from constants import *
+from default_config import *
 
 class AutoMixer:
 	#todo extract this to config?
