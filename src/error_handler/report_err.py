@@ -1,6 +1,7 @@
 from .err_codes import ErrCodes
 from .err_codes_map import *
 
+   
 """
 for now let's see what happens if err handler is not a class - will I need class members later?
 class ErrHandler:
