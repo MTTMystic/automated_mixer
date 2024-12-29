@@ -31,3 +31,12 @@ Design considerations (based on still using old, wonky version and re-analyzing 
 First priority is unit-testing error and file/dir validation
 
 Decided to make the error handler a class and use a string factory for validation and construction of error messages (?) just because. Let's see how it goes!
+
+Crazy idea (image: Charlie with his conspiracy board from Always Sunny) : generate the error codes abbreviations enum using a pre-determined human-readable map of all possible error codes upon instantiating the ErrHandler claass instead of defining them myself because if I keep doing it over and over again it should be automated because that's what scripting is for
+
+Actually, prior solution was over-engineered and decided to skip abbreviations and use direct simple code-indexing with dev-readable and predictable structures to access msgs through string factory from formatted strings assigned per code. 
+
+# 12-28-2024 
+Recognized error reporting is over-engineered and decided to simplify to error codes, a class for reporting, and a string factory for pre-generated and formatted error messages.
+
+Also decided (in process of setting up error handling re-simplified) on validation handler separate from any other part of the automated_mixer code which would load dev constants from an ini and later load / verify user input (including config.ini)
