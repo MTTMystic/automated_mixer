@@ -1,12 +1,13 @@
 import os 
-from error_handler.report_err import report_err
-from default_config import *
+from err_handler.err_handler import ErrHandler
+from validation_handler.validation_handler import ValidationHandler
 
 class AutoMixer:
 	#todo extract this to config?
 	
 	#this is the name the user has to use for the subfolder that contains the subs to be bundled
 	#other subfolders are junk and ignored
+	"""
 	bundle_dir_name = "bundle_subs"
 	def validate_active_dir(self, input_dir):
 		input_dir_exists = os.path.exists(input_dir)
@@ -36,7 +37,7 @@ class AutoMixer:
 		#TODO: instantiate IO and Error handler
 		#TODO: parse (optional) user config for settings and smix-ins
 		#TODO: never considered, bu use and instantiate separate track manager?
-		"""
+		
 			- validate input dir and set as active dir
 			- load config and parse settings
 			- verify audio in sub-folder of active dir (correct extensions)
@@ -44,6 +45,12 @@ class AutoMixer:
 			- verify mix-ins and copy / rename, add to working directory -> different name scheme from main audios
 			- use track handler to import + memoize (manage info in memory for quick retieval/macro selection)
 			- macro factory functions?
-
-		"""
 		self.validate_active_dir(os.path.abspath(input_dir))
+		"""
+	
+
+	def __init__(self):
+		self.err_handler = ErrHandler()
+		self.validation_handler = ValidationHandler()
+
+		dev_config = validation_handler.load_dev_config()
